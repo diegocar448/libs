@@ -69,8 +69,11 @@ dependencies {
 
     implementation("androidx.room:room-runtime:2.7.1")
     //kapt("androidx.room:room-compiler:2.6.1")
-    // gerador de codigo para persistencia de dados
+    // gerador de codigo para persistencia de dados, compilador do room
     ksp("androidx.room:room-compiler:2.7.1")
+
+    // ksp se estiver usando Kotlin Coroutines
+    implementation("androidx.room:room-ktx:2.7.1")
 
 
 
