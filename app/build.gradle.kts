@@ -59,21 +59,18 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     //navegação
-    implementation("androidx.navigation:navigation-compose:2.8.9")
-    // code generator DI
-    implementation("com.google.dagger:hilt-android:2.56.1")
+    implementation(libs.androidx.navigation.compose)    // code generator DI
+    implementation(libs.hilt.android)
     // integração das libs hilt do android com a UI jetpack compose
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation(libs.androidx.hilt.navigation.compose)
     // gerar codigos para as anotações de injeção de dependencia hilt
-    implementation("com.google.dagger:hilt-compiler:2.56.1")
-
-    implementation("androidx.room:room-runtime:2.7.1")
+    implementation(libs.hilt.compiler)
+    implementation(libs.androidx.room.runtime)
     //kapt("androidx.room:room-compiler:2.6.1")
     // gerador de codigo para persistencia de dados, compilador do room
-    ksp("androidx.room:room-compiler:2.7.1")
-
+    ksp(libs.androidx.room.compiler)
     // ksp se estiver usando Kotlin Coroutines
-    implementation("androidx.room:room-ktx:2.7.1")
+    implementation(libs.androidx.room.ktx)
 
 
 
